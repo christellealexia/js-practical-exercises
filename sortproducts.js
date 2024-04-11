@@ -1,13 +1,10 @@
 function sortProducts(arr) {
 
-    let minPrice = arr.[0];
-    for (let i in arr) {
-        let minPrice = arr.[0];
-        if (arr.[i] < minPrice) {
-            return arr[i];
-        }
-    }
+    let minPrice = arr.sort((a, b) => a.prodPrice - b.prodPrice);
+    return a;
+
 }
+
 let arr = [{
         id: 1,
         prodName: 'tomatoes',
@@ -29,4 +26,5 @@ let arr = [{
         prodPrice: 2000,
     }
 ];
+
 console.log(sortProducts(arr));
