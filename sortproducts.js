@@ -25,6 +25,3 @@ function sortProducts(arr) {
 
     }
 }
-
-]
-}
